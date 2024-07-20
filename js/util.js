@@ -22,11 +22,9 @@ function getDate() {
 
 function createItem(todo) {
   let isChecked =todo.status == "active" ? false : true;
-  return;
-  `
-  <div class="todo-item">
+  return`<div class="todo-item">
           <div class="left">
-            < input type="checkbox" checked = ${isChecked ? true : false}>
+            <input type="checkbox" checked = ${isChecked ? true : false}>
             <div class="info">
               <h2>  ${todo.name}</h2>
               <p>${todo.time}</p>
